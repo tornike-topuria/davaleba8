@@ -1,0 +1,165 @@
+ .conteiner{ 
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+ }
+ /* TASK 1 */
+.button_div{ 
+        width: 50%;
+        height: 500px; 
+        background-color:rgb(243, 11, 231);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 100px;
+        
+} 
+    
+.main_button{
+    height: 100px;
+    width: 300px;
+   padding: 20px 40px;
+   background-color: rgb(243, 11, 231);
+   font-size: 35px;
+   color: aliceblue;
+   border: none;
+   border-radius: 20px;
+   transition-property: background-color;
+   transition-timing-function: linear;
+   transition-delay: 2s;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   text-shadow: 0px 2px 1px blue;
+}
+.main_button:hover{
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/* TASK 2 */
+ .main_section{
+    width: 50%;
+    height: 450px;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    color: green;
+    transition-duration: 2s;
+ }
+img:hover{
+    border-radius: 10px 10px 0px 0px ;
+    transition-duration: 2s;
+}
+.main_section:hover{
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 6px 6px 6px 6px aqua;
+    
+}
+/* TASK 3 */
+ .section_2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 40px;
+    color: yellow;
+    animation-name: colorBg;
+    Animation-duration:1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    
+ } 
+  @keyframes colorBg{
+0%{color: blue;}
+50%{color: blueviolet;}
+100%{color: red;}
+} 
+/* task 4    */
+.arteacle_button{
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    font-size: 30px;
+    color: chartreuse;
+    border: none;
+    border-radius: 20px;
+    transition: 3s linear;
+    display: block;
+    margin: 300px auto;
+    
+    
+}
+.arteacle_button:hover{
+    transform: rotate(360deg);
+    
+}
+/* task 5 */
+header{
+    background-color: cadetblue;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    Animation-duration:2s;
+}
+
+ .header_ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 40px; 
+    column-gap: 80px;
+    color: bisque;
+ }
+ a{
+    color: bisque;
+    /* Animation-duration:2s; */
+    transition-delay: 1s;
+    
+ }
+ a:hover{
+    color: chartreuse;
+    text-shadow: 1px 1px 1px red;
+ }
+ /* task 6 */
+ .section_3{
+    margin-top: 100px;
+    /* width: 100%;
+    height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ .section_3_p{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 150px;
+    top: 0px;
+    left: 0px;
+    animation-name: backgroundanimation;
+    color: rgb(8, 9, 9);
+     Animation-duration:7s;  
+    transition-timing-function: ease-in;
+    animation-iteration-count: infinite; 
+ } 
+ @keyframes backgroundanimation{
+    0%{top: 0;
+        left: 0;
+    }
+    50%{top: 0px;
+    left: 150px;
+background-color: rgb(177, 33, 43);}
+    100%{top: 0;
+    left: 0px;}
+ }
