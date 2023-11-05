@@ -69,7 +69,7 @@ img:hover{
     color: yellow;
     animation-name: colorBg;
     Animation-duration:1s;
-    transition-timing-function: linear;
+    transition-timing-function: ease-in;
     animation-iteration-count: infinite;
 
     
@@ -80,24 +80,42 @@ img:hover{
 100%{color: red;}
 } 
 /* task 4    */
-.arteacle_button{
-    width: 300px;
-    height: 100px;
-    background-color: aqua;
+article{
+   width: 300px;
+    height: 300px;
     font-size: 30px;
     color: chartreuse;
-    border: none;
-    border-radius: 20px;
-    transition: 3s linear;
-    display: block;
-    margin: 300px auto;
-    
-    
+    margin: 200px auto;
+    display: flex;
 }
-.arteacle_button:hover{
-    transform: rotate(360deg);
-    
+.task4_spiner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    position: absolute;
+   border: 25px solid rgb(100, 100, 4);
+   border-radius: 50%;
+   border-top: 25px solid rgb(179, 9, 66);
+   border-bottom: 25px solid rgb(88, 88, 238);
+   width: 300px;
+   height: 300px;
+   animation: buttonanimation 3s linear infinite forwards;
 }
+.task4_div{
+   margin: auto;
+}
+@keyframes buttonanimation {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);}
+   }
+   .task4_spiner:hover{
+      animation-play-state: paused;
+   }
+    
+
 /* task 5 */
 header{
     background-color: cadetblue;
@@ -108,6 +126,7 @@ header{
     align-items: center;
     position: relative;
     Animation-duration:2s;
+    margin-top: 100px;
 }
 
  .header_ul{
@@ -130,36 +149,33 @@ header{
  }
  /* task 6 */
  .section_3{
-    margin-top: 100px;
-    /* width: 100%;
-    height: 50%; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+   width: 400px;
+  height: 40px;
+  margin: 80px auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
  }
  .section_3_p{
-    font-size: 30px;
-    border: 2px solid black;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 150px;
-    top: 0px;
-    left: 0px;
-    animation-name: backgroundanimation;
-    color: rgb(8, 9, 9);
-     Animation-duration:7s;  
-    transition-timing-function: ease-in;
-    animation-iteration-count: infinite; 
+   z-index: 1;
  } 
+ .section_p_loading{
+   height: 40px;
+   position: absolute;
+   left: 0%;
+   animation:backgroundanimation  5s linear infinite forwards;
+   border-radius: 30px;
+
+ }
  @keyframes backgroundanimation{
-    0%{top: 0;
-        left: 0;
+   0% {
+      width: 0%;
     }
-    50%{top: 0px;
-    left: 150px;
-background-color: rgb(177, 33, 43);}
-    100%{top: 0;
-    left: 0px;}
+    100% {
+      width: 100%;
+      background-color: red;}
  }
